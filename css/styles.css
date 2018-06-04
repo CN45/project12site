@@ -1,0 +1,281 @@
+
+* {
+	box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+#hfont1 { color:#e8a010; font-size:28pt; }
+.parallax {
+    /* The image used */
+    background-image: url('myName.jpg');
+
+    /* Full height */
+    height: 80%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#draggable { color: red; width: 150px; height: 150px; padding: 0.5em; }
+.credits {
+	padding-bottom: 1.5rem;
+}
+
+.hover {
+	background-color: pink;
+}
+
+body {
+	opacity: 1;
+	 transition: 1s opacity;
+	text-align: center;
+	background-color: #E1ECF9;
+	color: #091D34;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.7;
+
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+a {
+	text-decoration: none;
+	color: #0A337F;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+  	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+  	margin: 1em auto;
+}
+
+.container {
+	padding-left: 1em;
+  	padding-right: 1em;
+
+}
+
+
+.nav li {
+	padding: .75em;
+	border: 1px solid #fff;
+	background-color: #f9f9f9;
+	margin-top: .5em;
+
+}
+
+.nav a {
+	text-align: center;
+ 	display: block;
+ 	color: #24467c;
+}
+
+.nav li:hover {
+	text-decoration: underline;
+}
+
+.profile-img {
+	width: 70%;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	    padding: 10px;
+	    background: white;
+}
+.profile-img:hover {
+	background-color: gold;
+	cursor:move;
+}
+
+
+
+
+
+.intro {
+	width: 90%;
+}
+
+.main-content {
+	padding-bottom: 1.5rem;
+  	background-color: #6395F2;
+  	color: #091834;
+}
+
+
+.section {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-nav {
+	display: none;
+}
+
+.footer-bar {
+	border-top: 1px solid #444444;
+}
+
+.footer-name {
+	float: left;
+}
+
+.top {
+	float: right;
+}
+
+.top:hover {
+	text-decoration: underline;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+    	padding-left: 0;
+    	padding-right: 0;
+	}
+
+	.main-header {
+		display: block;
+		margin: 0;
+		padding-top: .5rem;
+	}
+
+	.main-header li {
+		display: inline-block;
+		background: none;
+		border: none;
+		margin-left: 1rem;
+		padding-top: 0;
+	}
+
+	.profile-img {
+		float: right;
+		width: 45%;
+	}
+
+	.intro {
+		float: right;
+		width: 50%;
+		padding-right: 1.8rem;
+		text-align: left;
+	}
+
+	.box {
+		width: 50%;
+		float: left;
+		padding-left: .3rem;
+		padding-right: .3rem;
+	}
+
+	.top {
+		display: none;
+	}
+
+	.footer-nav {
+		display: block;
+		float: right;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.footer-nav li {
+		display: inline-block;
+		margin-left: 1rem;
+	}
+
+	.contact {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+	}
+
+	.contact-info li {
+		padding: .35em;
+	}
+
+	.nav a {
+	text-align: center;
+ 	display: block;
+ 	color: #0A337F;
+	}
+
+	.footer-nav li:hover {
+		text-decoration: underline;
+	}
+
+@media (min-width: 1024px) {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+    	max-width: 1200px;
+	}
+
+	.box {
+		width: 33%;
+		margin: 0 auto;
+		padding-left: 2rem;
+	}
+
+
+	.contact-info li {
+		padding: .35em;
+	}
+
+	.main-header ul {
+		float: right;
+	}
+
+	.nav li {
+		padding-top: 1.3em;
+	}
+
+	h1 {
+		float: left;
+		padding-left: 1.9em;
+	}
+	.social {
+display: flex;
+justify-content: center;
+	}
+	/* Turn off parallax scrolling for all tablets and phones. */
+	@media only screen and (max-device-width: 1366px) {
+	    .parallax {
+	        background-attachment: scroll;
+	    }
+	}
+
+}
+}
