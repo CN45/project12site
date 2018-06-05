@@ -8,7 +8,7 @@ body, html {
 #hfont1 { color:#e8a010; font-size:28pt; }
 .parallax {
     /* The image used */
-    background-image: url('myName.jpg');
+    background-image: none;
 
     /* Full height */
     height: 80%;
@@ -167,6 +167,9 @@ a.github {
     	padding-left: 0;
     	padding-right: 0;
 	}
+	.parallax {
+background-image: url('myName.jpg');
+}
 
 	.main-header {
 		display: block;
@@ -270,10 +273,18 @@ a.github {
 display: flex;
 justify-content: center;
 	}
+
+	@media only screen and (min-width: 320px) {
+		.parallax {
+background-image: url('myName.jpg');
+}
+
+}
 	/* Turn off parallax scrolling for all tablets and phones. */
 	@media only screen and (max-device-width: 1366px) {
 	    .parallax {
 	        background-attachment: scroll;
+					width: 100%;
 	    }
 	}
 
